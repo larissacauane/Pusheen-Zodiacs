@@ -1,0 +1,65 @@
+/*------- BASIC SETUP --------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(240, 248, 255);
+}
+
+.container{
+    width: 563px;
+    height: 380px;
+    background-color:rgb(252, 240, 228);
+    margin: 70px 390px auto;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 1%;
+}
+
+h1, h2, label, #date, .btn-find{
+    font-family: 'Sniglet', cursive;
+    font-weight: normal;
+    color: rgb(74, 40, 22);
+    position: absolute;
+    left: 20px;
+}
+
+h1{
+    font-size: 25px;
+    top: 220px;
+}
+
+h2{
+    font-size: 15px;
+    top: 250px;
+}
+
+label{
+    top: 280px;
+}
+
+#date{
+    top: 300px;
+}
+
+.btn-find{
+    top: 332px;
+    color:rgb(252, 240, 228);
+    background-color:rgb(74, 40, 22);
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+}
+
+.btn-find:hover{
+    background-color: rgb(90, 82, 75);
+}
+
+img{
+    position: absolute;
+    top: 1px;
+    border-radius: 1%;
+}
+
