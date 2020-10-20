@@ -6,6 +6,7 @@ function sign(){
     var title = document.getElementById('msg-title');
     var msg = document.getElementById('msg');
     
+    
     if(day >= 20 && month == "January" || day <= 18 && month == "February"){
         img.src = "./img/aquarius.gif"
         form.innerHTML = " ";
