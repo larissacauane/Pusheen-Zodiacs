@@ -1,107 +1,108 @@
-function sign(){
-    var day = parseInt(document.getElementById('day').value);
-    var month = document.getElementById('month').value;
-    var img = document.getElementById('img')
-    var form = document.getElementById('form');
+function changeSizeAndColor(id, color) {
+    var change = document.getElementById(id)
+    change.style.height = "310px";
+    change.style.backgroundColor = color;
+}
+
+function changeText(characteristics, qualities) {
     var title = document.getElementById('msg-title');
     var msg = document.getElementById('msg');
+    title.innerText = characteristics;
+    msg.innerText = qualities;
+}
+
+function changeImg(imgSrc) {
+    var img = document.getElementById('img')
+    img.src = imgSrc;
+}
+
+function hideForm() {
+    var form = document.getElementById('form');
+    form.style.display = "none";
+}
+
+
+function sign(){
+    var day = parseInt(document.getElementById('day').value);
+    var m = document.getElementById('month').value;
+    var month = m.toUpperCase();
     
-    
-    if(day >= 20 && month == "January" || day <= 18 && month == "February"){
-        img.src = "./img/aquarius.gif"
-        form.innerHTML = " ";
-        title.innerText = "Characteristics";
-        msg.innerText = "Problem-solver, humanitarian, and independent.";
-        document.getElementById('container').style.height = "310px";
-        document.getElementById('container').style.background = "#f4f1ff";
+    if(day >= 20 && month == "JANUARY" || day <= 18 && month == "FEBRUARY") {
+        hideForm();
+        changeText("Characteristics","Problem-solver, humanitarian, and independent.");
+        changeSizeAndColor("container", "#f4f1ff");
+        changeImg("./img/aquarius.gif");
     }
-    else if(day >= 21 && month == "March" || day <= 19 && month == "April") {
-        img.src = "./img/aries.gif"
-        form.innerHTML = " ";
-        title.innerText = "Characteristics";
-        msg.innerText = "Ambitious, independent, and energetic.";
-        document.getElementById('container').style.height = "310px";
-        document.getElementById('container').style.background = "#feeeed";
+    else if(day >= 21 && month == "MARCH" || day <= 19 && month == "APRIL") {
+        hideForm();
+        changeText("Characteristics", "Ambitious, independent, and energetic.");
+        changeSizeAndColor("container", "#feeeed");
+        changeImg("./img/aries.gif"); 
     }
-    else if(day >= 21 && month == "June" || day <= 22 && month ==  "July") {
-        img.src = "./img/cancer.gif"
-        form.innerHTML = " ";
-        title.innerText = "Characteristics";
-        msg.innerText = "Helpful, sensitive, and caring.";
-        document.getElementById('container').style.height = "310px";
-        document.getElementById('container').style.background = "#e6f9ff";
+    else if(day >= 21 && month == "JUNE" || day <= 22 && month ==  "JULY") {
+        hideForm();
+        changeText("Characteristics", "Helpful, sensitive, and caring.");
+        changeSizeAndColor('container', "#e6f9ff");
+        changeImg("./img/cancer.gif");
     }
-    else if(day >= 22 && month == "December" || day <= 19 && month == "January") {
-        img.src = "./img/capricorn.gif"
-        form.innerHTML = " ";
-        title.innerText = "Characteristics";
-        msg.innerText = "Hard-working, focused, and driven.";
-        document.getElementById('container').style.height = "310px";
-        document.getElementById('container').style.background = "#e9f7f5";
+    else if(day >= 22 && month == "DECEMBER" || day <= 19 && month == "JANUARY") {
+        hideForm();
+        changeText("Characteristics", "Hard-working, focused, and driven.");
+        changeSizeAndColor('container', "#e9f7f5");
+        changeImg("./img/capricorn.gif");
     }
-    else if(day >= 21 && month == "May" || day <= 20 && month == "June") {
-        img.src = "./img/gemini.gif"
-        form.innerHTML = " ";
-        title.innerText = "Characteristics";
-        msg.innerText = "Witty, chatty, and ever curious.";
-        document.getElementById('container').style.height = "310px";
-        document.getElementById('container').style.background = "#f4f1ff";
+    else if(day >= 21 && month == "MAY" || day <= 20 && month == "JUNE") {
+        hideForm();
+        changeText("Characteristics", "Witty, chatty, and ever curious.");
+        changeSizeAndColor('container', "#f4f1ff");
+        changeImg("./img/gemini.gif");
     }
-    else if(day >= 23 && month == "July" || day <= 22 && month == "August") {
-        img.src = "./img/leo.gif"
-        form.innerHTML = " ";
-        title.innerText = "Characteristics";
-        msg.innerText = "Fun-loving, proud, and the life of the party.";
-        document.getElementById('container').style.height = "310px";
-        document.getElementById('container').style.background = "#feeeed";
+    else if(day >= 23 && month == "JULY" || day <= 22 && month == "AUGUST") {
+        hideForm();
+        changeText("Characteristics", "Fun-loving, proud, and the life of the party.");
+        changeSizeAndColor('container', "#feeeed");
+        changeImg("./img/leo.gif");
     }
-    else if(day >= 23 && month == "September" || day <= 22 && month == "October") {
-        img.src = "./img/libra.gif"
-        form.innerHTML = " ";
-        title.innerText = "Characteristics";
-        msg.innerText = "Trustworthy, fair, and charming.";
-        document.getElementById('container').style.height = "310px";
-        document.getElementById('container').style.background = "#f4f1ff";
+    else if(day >= 23 && month == "SEPTEMBER" || day <= 22 && month == "OCTOBER") {
+        hideForm();
+        changeText("Characteristics", "Trustworthy, fair, and charming.");
+        changeSizeAndColor('container', "#f4f1ff");
+        changeImg("./img/libra.gif");
     }
-    else if(day >= 19 && month == "February" || day <= 20 && month == "March") {
-        img.src = "./img/pisces.gif"
-        form.innerHTML = " ";
-        title.innerText = "Characteristics";
-        msg.innerText = "Caring, thoughtful, a good friend to the end!";
-        document.getElementById('container').style.height = "310px";
-        document.getElementById('container').style.background = "#e6f9ff";
+    else if(day >= 19 && month == "FEBRUARY" || day <= 20 && month == "MARCH") {
+        hideForm();
+        changeText("Characteristics", "Caring, thoughtful, a good friend to the end!");
+        changeSizeAndColor('container', "#e6f9ff");
+        changeImg("./img/pisces.gif");
     }
-    else if(day >= 22 && month == "November" || day <= 21 && month == "December") {
-        img.src = "./img/sargittarius.gif"
-        form.innerHTML = " ";
-        title.innerText = "Characteristics";
-        msg.innerText = "Adventurous, driven, and creative.";
-        document.getElementById('container').style.height = "310px";
-        document.getElementById('container').style.background = "#feeeed";
+    else if(day >= 22 && month == "NOVEMBER" || day <= 21 && month == "DECEMBER") {
+        hideForm();
+        changeText("Characteristics", "Adventurous, driven, and creative.");
+        changeSizeAndColor('container', "#feeeed");
+        changeImg("./img/sargittarius.gif");
     }
-    else if(day >= 23 && month == "October" || day <= 21 && month == "November") {
-        img.src = "./img/scorpio.gif"
-        form.innerHTML = " ";
-        title.innerText = "Characteristics";
-        msg.innerText = "Authentic, intense, and loyal.";
-        document.getElementById('container').style.height = "310px";
-        document.getElementById('container').style.background = "#e6f9ff";
+    else if(day >= 23 && month == "OCTOBER" || day <= 21 && month == "NOVEMBER") {
+        hideForm();
+        changeText("Characteristics", "Authentic, intense, and loyal.");
+        changeSizeAndColor('container', "#e6f9ff");
+        changeImg("./img/scorpio.gif");
     }
-    else if(day >= 20 && month == "April" || day <= 20 && month == "May") {
-        img.src = "./img/taurus.gif"
-        form.innerHTML = " ";
-        title.innerText = "Characteristics";
-        msg.innerText = "Strong and dependable, yet stubborn.";
-        document.getElementById('container').style.height = "310px";
-        document.getElementById('container').style.background = "#e9f7f5";
+    else if(day >= 20 && month == "APRIL" || day <= 20 && month == "MAY") {
+        hideForm();
+        changeText("Characteristics", "Strong and dependable, yet stubborn.");
+        changeSizeAndColor('container', "#e9f7f5");
+        changeImg("./img/taurus.gif");
     }
-    else {
-        img.src = "./img/virgo.gif"
-        form.innerHTML = " ";
-        title.innerText = "Characteristics";
-        msg.innerText = "Organized, sophisticated, and kind.";
-        document.getElementById('container').style.height = "310px";
-        document.getElementById('container').style.background = "#e9f7f5";
+    else if (day >= 23 && month == "AUGUST" || day <= 22 && month == "SEPTEMBER") {
+        hideForm();
+        changeText("Characteristics", "Organized, sophisticated, and kind.");
+        changeSizeAndColor('container', "#e9f7f5");
+        changeImg("./img/virgo.gif");
+    }
+    else{
+        hideForm();
+        changeText("Invalid date or month", "Please try again");
+        changeSizeAndColor('container', "#feeeed");
     }
 
 }
