@@ -21,7 +21,6 @@ function hideForm() {
     form.style.display = "none";
 }
 
-
 function sign(){
     var day = parseInt(document.getElementById('day').value);
     var m = document.getElementById('month').value;
@@ -106,3 +105,4 @@ function sign(){
     }
 
 }
+
