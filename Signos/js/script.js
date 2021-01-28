@@ -1,30 +1,30 @@
 function changeSizeAndColor(id, color) {
-    var change = document.getElementById(id)
+    let change = document.getElementById(id)
     change.style.height = "310px";
     change.style.backgroundColor = color;
 }
 
 function changeText(characteristics, qualities) {
-    var title = document.getElementById('msg-title');
-    var msg = document.getElementById('msg');
+    let title = document.getElementById('msg-title');
+    let msg = document.getElementById('msg');
     title.innerText = characteristics;
     msg.innerText = qualities;
 }
 
 function changeImg(imgSrc) {
-    var img = document.getElementById('img')
+    let img = document.getElementById('img')
     img.src = imgSrc;
 }
 
 function hideForm() {
-    var form = document.getElementById('form');
+    let form = document.getElementById('form');
     form.style.display = "none";
 }
 
 function sign(){
-    var day = parseInt(document.getElementById('day').value);
-    var m = document.getElementById('month').value;
-    var month = m.toUpperCase();
+    let day = parseInt(document.getElementById('day').value);
+    let mon = document.getElementById('month').value;
+    let month = mon.toUpperCase();
     
     if(day >= 20 && month == "JANUARY" || day <= 18 && month == "FEBRUARY") {
         hideForm();
