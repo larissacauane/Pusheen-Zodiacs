@@ -1,5 +1,9 @@
 # Pusheen Zodiacs
- Find out your zodiac sign with Pusheen, the cat. This project was made to practice my JavaScript. 
+ Find out your zodiac sign with Pusheen, the cat. 
+ This project was made with:
+ * HTML5
+ * CSS3
+ * JavaScript
 
-<img src="https://i.pinimg.com/originals/73/dd/d1/73ddd17442a9814c153061566434a209.png"> 
-<img src="https://i.pinimg.com/originals/bc/c8/4f/bcc84fab94799fded5cc81800438d505.png">
+<img src="https://i.pinimg.com/originals/e4/37/2e/e4372e633d12ce144518b3db5c0c916e.gif"> 
+
