@@ -1,4 +1,4 @@
-# Pusheen Zodiacs
+# Pusheen Zodíaco
 ## :rocket: Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
  * HTML5
